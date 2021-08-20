@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../../index.html">Main</a>
+    <ol>
+      <li>
+        <p>Чему будут равны переменные a, b, c и d в примере ниже?</p>
+        <pre>
+          <code>
+        let a = 1, b = 1;
+        let c = ++a; // ?
+        let d = b++; // ?
+          </code>
+          </pre>
+        <p>c = 2; d = 2</p>
+      </li>
+      <li>
+        <p>
+          Чему будут равны переменные a и x после исполнения кода в примере
+          ниже?
+        </p>
+        <pre>
+          <code>
+        let a = 2;
+        let x = 1 + (a *= 2);
+          </code>
+          </pre>
+        <p>a = 4; x = 5</p>
+      </li>
+      <li>
+        <p>Какой результат будет у выражений ниже?</p>
+        <pre>
+          <code>
+        "" + 1 + 0 = "10"
+        "" - 1 + 0 = -1
+        true + false = 1
+        6 / "3" = 2
+        "2" * "3" = 6
+        4 + 5 + "px" = "9px"
+        "$" + 4 + 5 = "$45"
+        "4" - 2 = 2
+        "4px" - 2 = NaN
+        7 / 0 = Infinity
+        "  -9  " + 5 = " -9 5 "
+        "  -9  " - 5 = -14
+        null + 1 = 1
+        undefined + 1 = NaN
+        " \t \n" - 2 = -2
+          </code>
+          </pre>
+      </li>
+      <li>
+        <p>
+          Ниже приведён код, который запрашивает у пользователя два числа и
+          показывает их сумму. Он работает неправильно. Код в примере выводит 12
+          (для значения полей по умолчанию). В чём ошибка? Исправьте её.
+          Результат должен быть 3.
+        </p>
+        <pre>
+          <code>
+        let a = prompt("Первое число?", 1);
+        let b = prompt("Второе число?", 2);
+            
+        alert(a + b); // 12
+          </code>
+          <code>
+        let a = prompt("Первое число?", 1);
+        let b = prompt("Второе число?", 2);
+            
+        alert(+a + +b); // 3
+          </code>
+          </pre>
+      </li>
+    </ol>
+  </body>
+</html>
